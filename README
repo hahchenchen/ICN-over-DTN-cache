@@ -1,0 +1,3 @@
+三节点的缓存功能测试实验。client是在地球的客户，裸跑ICN。其余两个gateway跑ICN over DTN。
+注意细节：
+1.速率限制，client和earth gateway的网口1需要用tc netem限速。client设置为100k，earth gateway网口1设置为1M。earth gateway的网口2和mars gateway的网口可直接利用DTN的rc文件进行速率控制。 
